@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "popins";
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+body {
+    font-family: 'popins';
+    margin: 0;
+}
+
+p {
+    color: gray;
+    font-size: 14px;
+    margin: 0;
+}
