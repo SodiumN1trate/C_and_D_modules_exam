@@ -79,4 +79,14 @@ class MainController extends Controller
 
         return response()->json([], 204);
     }
+
+    public function myTeam(Request $request) {
+        $team = Team::where('accessCode', $request->bearerToken())->first();
+        if(!isset($team)) {
+            return response()->json([
+                'message' => 'Team not found',
+            ], 404);
+        }
+        return new TeamResource($team);
+    }
 }

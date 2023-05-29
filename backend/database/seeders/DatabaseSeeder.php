@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test',
             'contactEmail' => 'test@gmail.com',
             'startingTime' => '2023-05-29 13:55:41',
-            'accessCode' => rand(99999999, 999999999),
+            'accessCode' => 826086861,
         ]);
 
         Runner::factory()->state(['teamId' => $team->id])->count(10)->create();

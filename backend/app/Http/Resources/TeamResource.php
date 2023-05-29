@@ -36,6 +36,7 @@ class TeamResource extends JsonResource
             'startingTime' => isset($this->startingTime) ? (new \Carbon\Carbon($this->startingTime))->format('Y-m-d H:i') : null,
             'accessCode' => $this->accessCode,
             'averagePace' => $averagePace == '0:0' ? '6:00' : $averagePace,
+            'runners' => $this->runners,
             'createdAt' => $this->created_at,
             'updatedAt' => $this->updated_at,
         ];

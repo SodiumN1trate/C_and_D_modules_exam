@@ -18,8 +18,8 @@ class RunnerFactory extends Factory
     public function definition(): array
     {
         return [
-            'firstName' => fake()->name(),
-            'lastName' => fake()->unique()->safeEmail(),
+            'firstName' => fake()->firstName(),
+            'lastName' => fake()->unique()->lastName(),
             'pace' => rand(0, 6) . ':' .  rand(0, 60),
         ];
     }

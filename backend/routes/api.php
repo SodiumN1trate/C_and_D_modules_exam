@@ -16,6 +16,7 @@ use App\Http\Controllers\Api\MainController;
 
 Route::post('/login', [MainController::class, 'login']);
 
+Route::get('/myTeam', [MainController::class, 'myTeam']);
 
 Route::middleware(['is.token'])->group(function () {
     Route::get('/teams', [MainController::class, 'getTeams']);
