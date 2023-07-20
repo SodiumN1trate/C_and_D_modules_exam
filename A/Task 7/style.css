@@ -1,0 +1,31 @@
+button {
+    background-color: white;
+}
+
+.a:checked {
+    counter-increment: count 10;
+}
+
+.b:checked {
+    counter-increment: count 32;
+}
+
+.c:checked {
+    counter-increment: count 64;
+}
+
+.d:checked {
+    counter-increment: count -15;
+}
+
+main {
+    counter-reset: count;
+}
+
+span::marker {
+    content: counters(count, '-');
+}
+
+span::before {
+    content: counters(count, '-');
+  }
